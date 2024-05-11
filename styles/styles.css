@@ -11,10 +11,10 @@ header {
 }
 
 .container-logo{
-    width: 30%;
-    height: 100%;
+    width: 10%;
+    height: 20%;
     position: absolute;
-    right: 35rem;
+    right: 20rem;
     
 }
 
@@ -23,16 +23,58 @@ header {
     height: 6rem;
     border-radius: 50%;
     margin: 1rem;
-    float: right;
+    
     
 }
 
 .container-btn{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
 }
 
+.icon-btn{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    background-color: #8732cc;
+    border-radius: 10px;
+}
+.icon-btn >img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.flex-container {
+    display: flex;
+  }
+  
+  .flex-container > div {
+    background-color: #cc3232;
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .img-city  {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  .footer {
+    background-color: #1E90FF; /* Azul */
+    color: #FFFFFF; /* Blanco */
+    text-align: center;  
+    width: 100%;
+    height: 10%;
+    margin-top: 1rem;
+  }
+  
+  /* Enlaces sociales */
+  .social a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
 
     
