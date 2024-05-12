@@ -86,6 +86,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px 0;
+    
 }
 
 .flex-container > div {
@@ -102,21 +103,71 @@ header {
     height: auto;
 }
 
-.inputs-container {
+.flex-parent{
+    background-color: #f1f510;
+    
+}
+
+.inputs-container1 {
     display: flex;
-    justify-content: space-between; 
+    position: relative;
+    left: 20rem;
     align-items: center; 
-    background-color: rgb(28, 83, 235);
+    flex-wrap: wrap;
+    width: calc(15% - 40px);
+    margin-top: 20px;
+    
+}
+
+.inputs-container2 {
+    display: flex;
+    position: relative;
+    left: 29rem;
+    align-items: center; 
+    flex-wrap: wrap;
+    width: calc(45% - 40px);
+    margin-top: -27px;
+    
 
 }
 
-input, select {
-    padding: 5px;
-    margin: 20px;
+.inputs-container3 {
+    display: flex;
+    position: relative;
+    left: 43rem;
+    align-items: center; 
+    flex-wrap: wrap;
+    width: calc(45% - 40px);
+    margin-top: -27px;
+    
+
+}
+
+.inputs-container4 {
+    display: flex;
+    position: relative;
+    left: 56rem;
+    align-items: center; 
+    flex-wrap: wrap;
+    width: calc(15% - 40px);
+    margin-top: -27px;
+
+}
+
+input, select{
+    padding: 2px;
+    margin: 2px;
     border: 1px solid #ccc;
-    border-radius: 40px;
-    margin-top: 30px;
-    padding-left: 10px;
+    border-radius: 50px;
+    margin-right: 300px;
+    padding: 1;
+    
+    
+} 
+
+label {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -141,3 +192,24 @@ input, select {
     }
 }
 
+/* Media queries para adaptación a diferentes tamaños de pantalla */
+@media (max-width: 768px) { /* Tablets y teléfonos grandes */
+    .flex-parent {
+        flex-direction: column;
+    }
+
+    .inputs-container1, .inputs-container2, .inputs-container3, .inputs-container4 {
+        width: 100%; /* Aprovecha el ancho completo en dispositivos pequeños */
+        margin: 5px; /* Reduce el margen para mejorar la adaptabilidad */
+    }
+}
+
+@media (max-width: 480px) { /* Teléfonos pequeños */
+    input, select {
+        padding: 5px; /* Reduce el padding para más espacio */
+    }
+
+    label {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente para mejor visualización */
+    }
+}
