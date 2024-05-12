@@ -102,6 +102,27 @@ header {
     height: auto;
 }
 
+.inputs-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: chocolate;
+
+}
+
+input, select {
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+
+
+
+
 /* Responsive Media Queries */
 @media (max-width: 768px) {
     .container-header {
