@@ -288,25 +288,27 @@ hr {
     }
 }
 
-/* Media queries para adaptación a diferentes tamaños de pantalla */
-@media (max-width: 768px) { /* Tablets y teléfonos grandes */
-    .flex-parent {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .inputs-container1, .inputs-container2, .inputs-container3, .inputs-container4 {
+        left: initial; /* Elimina el left en dispositivos pequeños */
+        width: 100%; /* Usamos el ancho completo en dispositivos pequeños */
+        justify-content: center; /* Centra los elementos en el contenedor */
+        margin-top: 10px; /* Ajusta el margen superior */
     }
 
-    .inputs-container1, .inputs-container2, .inputs-container3, .inputs-container4 {
-        width: 100%; /* Aprovecha el ancho completo en dispositivos pequeños */
-        margin: 5px; /* Reduce el margen para mejorar la adaptabilidad */
+    input, select {
+        width: 90%; /* Hace los input y select más anchos para llenar el contenedor */
+        margin: 5px auto; /* Añade margen automático para centrar */
     }
 }
 
-@media (max-width: 480px) { /* Teléfonos pequeños */
+@media (max-width: 480px) {
     input, select {
-        padding: 5px; /* Reduce el padding para más espacio */
+        width: 100%; /* Maximiza el ancho para dispositivos muy pequeños */
     }
 
     label {
-        font-size: 0.9em; /* Reduce el tamaño de la fuente para mejor visualización */
+        font-size: 0.9em; /* Ajusta el tamaño de fuente para mejor legibilidad */
     }
 }
 
@@ -314,5 +316,28 @@ hr {
     footer {
         width: 75%; /* Ajusta según necesidades */
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-container1 {
+        width: 100%;  /* Usa el ancho completo del viewport */
+        margin-left: 0; /* Elimina el margen lateral */
+        justify-content: space-around; /* Distribuye el espacio uniformemente */
+    }
+    .flex-container1 > div {
+        flex: 1 1 100%; /* Cada div toma el ancho completo en dispositivos pequeños */
+    }
+    .img-city1 {
+        width: 100%; /* Asegura que la imagen sea responsiva */
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-container img {
+        width: 100%; /* La imagen ocupa el 100% del contenedor */
+    }
+    .flex-container1 img {
+        width: 100%; /* La imagen ocupa el 100% del contenedor */
     }
 }
