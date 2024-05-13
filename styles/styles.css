@@ -31,9 +31,11 @@ header {
 .nav-bar >h1{
     position: relative;
     left: 13rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
     font-size: 30px;
     margin-top: -20px;
+    font-weight: bold;
+    
 }
 
 .left-content {
@@ -54,6 +56,7 @@ header {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    box-shadow: 0 0 20px rgba(10, 10, 10, 0.75);
 }
 
 .container-btn {
@@ -70,9 +73,10 @@ header {
     border-radius: 30px;
     display: flex;
     align-items: center;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(12, 12, 12);
+    font-family: cursive;
     font-weight: bold;
+    border: 2px solid #050505;
 }
 
 
@@ -98,11 +102,13 @@ header {
 .flex-container > div {
     flex: 1 1 150px;
     margin: 10px;
-    text-align: center;
+    text-align: left;
     background-color: #c48d03;;
     border-radius: 15px;
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
+    font-weight: bold;
+    border: 2px solid #050505;
     
 }
 
@@ -132,10 +138,11 @@ header {
 .flex-container1 > div {
     flex: 1 1 150px;
     margin: 12px;
-    text-align: center;
+    text-align: left;
     background-color:#c48d03;;
     border-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
+    font-weight: bold;
     font-size: 30px;
 }
 
@@ -187,7 +194,7 @@ header {
 .inputs-container4 {
     display: flex;
     position: relative;
-    left: 56rem;
+    left: 57rem;
     align-items: center; 
     flex-wrap: wrap;
     width: calc(15% - 40px);
@@ -204,12 +211,13 @@ input, select{
     margin-right: 300px;
     padding: 1;
     
-    
 } 
 
 label {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 /* Footer */
@@ -245,10 +253,10 @@ hr {
 .hr1 {
     border: none;
     height: 2px;
-    background-color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Añade sombra */
-    width: 20%; /* Reduce el ancho a 50% */
-    margin: 0 auto; /* Centra el HR horizontalmente */
+    background-color: #fcf8f8;
+    box-shadow: 0 2px 4px  #080808; 
+    width: 20%; 
+    margin: 0 auto; 
 }
 
 
