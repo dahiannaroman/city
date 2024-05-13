@@ -4,6 +4,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 
 header {
@@ -50,8 +51,8 @@ header {
 }
 
 .img-logo {
-    width: 100px;
-    height: 95px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -59,7 +60,7 @@ header {
     display: flex;
     gap: 10px;
     order: 2; /* Botones a la derecha */
-    margin-top: 70px;
+    margin-top: 35px;
 }
 
 .icon-btn {
@@ -85,9 +86,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
-    margin: 10px;
-    margin-top: -20px;
+    width: 95%;
+    gap: 5px;
+    margin: 8px;
+    margin-top: -22px;
     margin-left: 50px;
     
 
@@ -95,18 +97,21 @@ header {
 
 .flex-container > div {
     flex: 1 1 150px;
-    margin: 12px;
+    margin: 10px;
     text-align: center;
     background-color: #f1f510;
-    border-radius: 20px;
-    padding: 0;
+    border-radius: 15px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
 .img-city {
     width: 100%;
-    height: 100px;
-    border-radius: 20px;
+    height: 140px;
+    border-radius: 15px;
+    object-fit: cover;
+    
 }
 
 
@@ -115,10 +120,10 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin: 10px;
+    width: 59%;
+    margin: 8px;
     margin-top: -25px;
-    margin-left: 250px;
+    margin-left: 285px;
     
     
 }
@@ -131,20 +136,18 @@ header {
     background-color: #f1f510;
     border-radius: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
 }
 
 
 .img-city1 {
-    width: 200px;
-    height: 100px;
+    width: 240px;
+    height: 130px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 
-.flex-parent{
-    background-color: #f1f510;
-    
-}
 
 .inputs-container1 {
     display: flex;
@@ -154,7 +157,6 @@ header {
     flex-wrap: wrap;
     width: calc(15% - 40px);
     margin-top: 20px;
-    
 }
 
 .inputs-container2 {
@@ -208,6 +210,18 @@ label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Footer */
+.footer {
+    background-color: #0760b9; /* Azul */
+    color: #FFFFFF; /* Blanco */
+    text-align: center;  
+    width: 100%;
+    height: 20%;
+    margin-top: -10px;
+  }
+
+
+  
 
 
 
@@ -249,5 +263,12 @@ label {
 
     label {
         font-size: 0.9em; /* Reduce el tamaño de la fuente para mejor visualización */
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        width: 75%; /* Ajusta según necesidades */
+        margin: 0 auto;
     }
 }
