@@ -4,12 +4,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
+    background-color:#fced8c;
 }
 
 header {
     width: 100%;
-    background-color: aquamarine;
+    background-color:#f7cb2b;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -65,7 +65,7 @@ header {
 
 .icon-btn {
     padding: 7px;
-    background-color: #8732cc;
+    background-color:#c48d03;
     border: none;
     border-radius: 30px;
     display: flex;
@@ -89,7 +89,7 @@ header {
     width: 95%;
     gap: 5px;
     margin: 8px;
-    margin-top: -22px;
+    margin-top: -2px;
     margin-left: 50px;
     
 
@@ -99,7 +99,7 @@ header {
     flex: 1 1 150px;
     margin: 10px;
     text-align: center;
-    background-color: #f1f510;
+    background-color: #c48d03;;
     border-radius: 15px;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -133,7 +133,7 @@ header {
     flex: 1 1 150px;
     margin: 12px;
     text-align: center;
-    background-color: #f1f510;
+    background-color:#c48d03;;
     border-radius: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
@@ -157,6 +157,7 @@ header {
     flex-wrap: wrap;
     width: calc(15% - 40px);
     margin-top: 20px;
+    
 }
 
 .inputs-container2 {
@@ -167,7 +168,7 @@ header {
     flex-wrap: wrap;
     width: calc(45% - 40px);
     margin-top: -27px;
-    
+   
 
 }
 
@@ -191,6 +192,7 @@ header {
     flex-wrap: wrap;
     width: calc(15% - 40px);
     margin-top: -27px;
+   
 
 }
 
@@ -212,16 +214,42 @@ label {
 
 /* Footer */
 .footer {
-    background-color: #0760b9; /* Azul */
-    color: #FFFFFF; /* Blanco */
+    background-color: #a06008; 
+    color: #FFFFFF; 
     text-align: center;  
     width: 100%;
-    height: 20%;
+    height: 100%;
+    padding: 30px;
     margin-top: -10px;
+    
   }
 
 
-  
+.red-logo{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #fafaf5;
+    box-shadow: 0 2px 4px #6f3e14; 
+    width: 100%;
+    margin: 0 auto; 
+   
+}
+
+.hr1 {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Añade sombra */
+    width: 20%; /* Reduce el ancho a 50% */
+    margin: 0 auto; /* Centra el HR horizontalmente */
+}
 
 
 
