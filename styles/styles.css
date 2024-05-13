@@ -1,4 +1,11 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
     margin: 0;
     width: 100%;
     min-height: 100vh;
@@ -33,7 +40,7 @@ header {
     left: 13rem;
     font-family: cursive;
     font-size: 30px;
-    margin-top: -20px;
+    margin-top: -40px;
     font-weight: bold;
     
 }
@@ -108,7 +115,7 @@ header {
     font-size: 30px;
     font-family: cursive;
     font-weight: bold;
-    border: 2px solid #050505;
+    
     
 }
 
@@ -257,6 +264,7 @@ hr {
     box-shadow: 0 2px 4px  #080808; 
     width: 20%; 
     margin: 0 auto; 
+    margin-top: -15px;
 }
 
 
